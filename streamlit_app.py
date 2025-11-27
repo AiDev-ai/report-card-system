@@ -36,8 +36,8 @@ def load_students():
         students = {}
         
         # Load Mid Term data
-        mid_wb = openpyxl.load_workbook("data/Exams/Mid Term.xlsx")
-        final_wb = openpyxl.load_workbook("data/Exams/Final Term.xlsx")
+        mid_wb = openpyxl.load_workbook("Mid Term.xlsx")
+        final_wb = openpyxl.load_workbook("Final Term.xlsx")
         
         # Get common sheets
         common_sheets = set(mid_wb.sheetnames) & set(final_wb.sheetnames)
